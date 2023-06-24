@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tribute Page - Task 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="bg-dark " id="front-page">
+        <div class="container banner">
+            <div>
+                <span class="tribute-badge">Tribute to</span>
+                <h2>India's Missile Man</h2>
+            </div>
+            <a id="scroll-down" href="#second-page"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+    <section class="bg-light " id="second-page">
+        <div class="container">
+            <div class="quote">
+                <div>
+                    <span class="tribute-badge">Quote</span>
+                    <h2>“All of us do not have equal talent. But, all of us have an equal opportunity to develop our talents.”</h2>
+                </div>
+                <div class="img-div">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgVFRUYGRgaGhoYGBoYGhoYGBgZGRgaGhgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjErJCs0NDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xABBEAACAQIEAwUECAUCBQUAAAABAgADEQQSITEFQVEGImFxkRMygaEUQmJyscHR8AdSgrLhM5IVJDSDoiM1U3TC/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJhEAAgICAgIDAAIDAQAAAAAAAAECEQMhEjEEQRMiUTKBFXGRBf/aAAwDAQACEQMRAD8AvWgREBheUc9hC8LxDALDNFvG2jTE0NSJbwvIs0A8VF8iWF5Fmi5oUNSRLC8YHm5w7hBsHceS/m36QDkZ1DCs+w06nQfPf4S4nDebHQb2v6n/ABNP2IJygX6iy2A8xNDD02FgoS3QHX5QolyZz9CjSY5RUBYcrEfAEgXjsUGp7IpGwO59OflpNvE4TD1yyMBnHK+V18QQcw85mUsC9FjTdzUpMO4zgl0Ki5So97tsSrWuLeVi0Txk+2Z9LFZtAQD/ACm1vT4j9Y5AjHK6gNbxCnxB0vI8ZhcrXHX4k8gSPrb2PPUbxyANa/Lfz/mTx/HpeFgotMKvDTpl57AnfyPPy0Mz3Qg2Isek3qCMFFtRv9l18Oh2/wAR2NwgqKCPeG19z9luvgZNm6VnO2haSOhBIO43jDKsmhpEQiOMS0LFxGgRDH2hlhYqGXixcsAIxUNhaOtEvChDbQtFLSMtAKHQjYRgSwhEgQBEIl4hMACLeNheACmEZmi3gIUiJaGaaHBsH7Wqqct2+6N/0+MBo1OzfCLj2zjT6gO2n1z+Xr0m9iawUbi/nKnFOLpRsp0GygC5sOg6bazKqcWzjuKR0vpeZSkktmsYl2nWWxJAJOpvqB8PSK+JpvZHUDMcodO4y3+t5AzJd2y6m3lzmZiKxB01P58tZi8xtHH7Ohx2Fc4ermZg+Ge6VOZUAE776G43teWez3FjiVKVLZ1F8y7Mu2bwYNdSPunnLdSsauDcoC7sgVlHvE5QrfLWYXZjs/UoVPpD3RcrKUJ/m+sw23A0316DWraaSKSTi2yXF1AVJbTKSHHMC9mP9JKn4mOen3M42Bs4I2O1z4XIv68jH4p1XEmm47lVFdCdje61FHWxsbfbHSS8Lw+RKlBzcLcL0NM2Keivl/7c0Mq2LgXBAFjlbUeB/d/nLJcHQ+8u/iNr+tvWZ/D6bZQb37wP9hPrc+skxuYPmUXsMpA1Go1B8dV9IWXRW47hLWqLsdG8+RmJeddSok0ylTndRfcKSchPjoJylankYqdwbGNCloYIsLxLxkodEiXiEwKoGMazRDEjslxDNEvFIiZYWLiJaFototoBxG2hHQjsKC8LxIl4zChYRuaIWgA6JEvC8AoIQvFEYUJOs7F0h33591fhqf35TlRa87Ds3T9mpJYd61x0I2iY46ZgdsqDGummgDX8QSNPL9IYXQDYeZm12ydfZqwFznVfEBjrrMXPpa49L/nOPJ2dEegrG/PT0jHQaaDxveDk30/fh4CSpTc7D9B8TMJG8KRodnsXkqezZsqPbKejg6DXkRmHpNXG0KjLUYvewfKpHMgalSBsAbDXfczETg7uveIUHm2o9JYp4isimkHVxyuSXA+wbnS1+fpNoSaj9kNxTl9WNxFE4inTdf8AWol9NyQ4OYDrqL25i80cI4ZL/WQlT4gXG/MAk+sxBiSjhxdWvrYAhx0tcZW6EH4TpaGLSohdQMw0blc7EN+s0xTUkRlg4spcOFhl5qSPkMvyAmotIZlHmf363+MrHCAte5U2uGH1lO1/Ec/8yyiNpc3I0v16DTymhFjKlEsGPM6fG/6kf7TOZ7R4a1RWXXP3T99DlPqMs7GidLc7/if8yhiMOrnMdAGOnI5SRqOZ7vyjWgkrRwDORpE9rNLF4Bmquqgmy5vE2W9/EzLdCN5apmDckOFWL7SRhY60KRSmx4qRweQkRusXEayIs3jpVBMcrmKilNFmIZAa0cKoiKUkSWhG5x1hFsNDSYl428JscosQwhAKCEbCADo2LeJeAATOs4Ljcy5SLKAADfkBy8ZyU2eCY1V7jnu6Zd9DfkRtyiJZa4jg6mIqqiA+xp3YudA72sNbbAE/EwqYJU0Nj4/jI+3HEno0sqMUUqSWA2AGo89Zw2Gr11Gcs68+/YgX/mA92858tf2dGJWjtHsDfqND8YzHccdAFTQ2taw3HO/73lXgOKFdLki4JDDfXfTwlTjeHN//AEz3ibW6dT85ySnJPijuw44tOTM9+N4pyxz3XVSXcKh6gHn8tpocM4g6KMyXUEZXRg6jqCQdAd5QThKvRCMQlUMMrZQ6qmzCxIsx1N+pnUYTCoEHgAumg3vYC/UncnzjlSV3srHLk2qVE1Mhx7p19Bp/iRfSvZsFubfZsb33zDny13Ee9RV7ij0kn0MMLMPXeZRlJO0byhGSpmtw3Fl0Um4K3K3tex306bes0sPqdBYEehvf9fWY3C6RBH2Tb/Pz+c06+IKMSQbHawva5G4ndCVqzgnHi6NUKBvtI/o4vpruf92/4n1MjXFe7m2Y2+BX9ZTw1dvak62A+BW363mlkBVoqud7DMoa3oP1nnjPbQbdOU9A7VVlSg99C9lA5kkqT6BZ50dJUTHIx5aJeMvCUZD7xY2ODRhQ6IRDNANJGNKxsltALEUiO8JP7OJFsobCAhNTIDCNhEMUmJHTU4VwgVVLM+Xkote5G5PhFKSStjjFydIyYWj3SxIO4NvSIY0Jr9EtLGCZAwz33BBHh18JWLRA0BHW9p8B7egRp1XnsOc88qcFVaysACmQB1K99qmUBjnBuFJANr89p6HwPE50KH6o05/C/pOVx4dwFQWLaM/MDYgTLI6qh4/YvBcJk0TY3J336XuSfjLOOwTE30uefTxE2OF4VFULl7oFh5SpiQXJCDKuwJJB8552S3Oz18CqCRn0i62BUHoTrNPDlyuoAN+vLw03mKcVUovlfvqu5GpHieonR4PEq40tb97Qk7RMI1JqqFw1MBpf6n93lQoQfwlpNrRRZs0S4d8t7i4I/GHF8bkpl1UPYe6RfkLXHX3h6QQRtaiGUqec25yUWkZuEXK2VsPixWpkmoFJUZrWGQ2IYgE7EG3h1vOhw9VMoykHYC2t7acpytPDKtmZACrhMynbMbBiOQIm9g1KqCQc2YA3N9L8j8ZrhnKS+yMc0Ixf1MrtYrOyqNVA08CSbkj4b+M5F0I0II5ai3OepZNLgDxJGviLHacB2hQjEOCLagjyKjWdKZxzj7Mm0I60S0ozoaTCBEURBQoj1EheqBzi0c7nuj4xNjonFpPRplthLOF4TzczSRFUaCJspIo/QDCXfaGENjo50iFo60LS7IobaFopMS8YqBV5Ca2GzpVK2Iyi3gdN5V4Ml6yDzPxCkj8Jt1SwuchFybltrKDfbecvkPpHV4sfs2cu73JPXX1jCYGJOldHKxCYQMSMknwWLam4dNxy5EcwZdx2JUqXRdLE26HoZlyTNdHXwuPwP5TLKnxtF46umWsL2h0BIy3AIvoBfUazDs+IrMz1WZAbKikolz4CxblqZYrhFpqW2sNBvcDX8JnHjlGjYi2uvevfToo3nI4e0d+LLrjXR1+AwqIuUDca31J+MrKfo73W+Qnb+W/T7N5V4dxeq65lp5UtcM65Q33RmzH0hja9XIS6AeCnMbeItMZRaOhS1Z1qVMygjbeSUd9Zz/CsUCgIOlpsU69l31krTLW1ZfZhbQxgrSnVrW2lNsWL2EvlTFxNxKuUFuu99iPEc4mHxrtUyAX56WAUdT0B5fGZtOnUrsETuouj1PHmqD6zeOw+U6bh+DSkuVFsNyTqzH+ZjzM6MMZPfo58ziteyx7QAE/sGcZ2tYGopGhy2I59Rf1nV8RqqiZ2NlXcDmToP0nBYus1QljuWJ8ug/CdRySKNojECXEwhPhFPB77kxORHEyauLAkNJalQ91TbqZ0+G4Ag1IEu0URTlW2kTkNRRi4HgP1nN5tU6aILACSul5C2GJ5xWOgerIy8RsK3WJ9GeOyaYZosT6O0SOwoxy0aTFiSrHxEiCLLdDAMwzXAETko9iosdnkvXU9Ax/8SPznQ8bFqbEb5SfHUazCwC1KbXVAfE3/AAnSUKrVBldQLi1t73FjObJJSN8KqzgjGkxXFiR0JHpKmNxyUlzO2UbDmT4ADUzqTOZxZZiGUcDxijVOVH73Qgg/C+8uXjsnixI+m1iD6+UYDC8HsEqM/juBZwqK+UFgATsL6GQYbhWCw5DN33Gt2ObW+hC7DXwlri7kp4c/ykC8OpsQ5uRuRec+4qjojL2zWw3Fc/uKQOtr+nyl00Myd65B36+XlMrh+PVDooC+Wo6jrLv/ABRBz3F/Cck+zug3JdUImH9ixC3Cnl08pNguIi5Xc/p1mbV4mH21/fKNwFJ2bKgu59APE8pHHkzbUUb1bFM3hNbhPAnc56l1TcLs7+f8o+e+0m4LwpUAZ++/U7L90cvPedAjzqx4a3I5cma9RHIioAqgBQLAAWAHQCSBpEWjXqhfOdBzNlmvTV0KPqrAgj985y1TgboLgBh9nU+k2C5POSK5GxjohyRzGQ3ta3ylyjR6zdapfcA+YEiemjfVt5aQ4k2jA4xj1o0yb8p5rgO07riCXPdJ9J6pxLsxRxHvvVH3WQfipnKcV/hNmu2GxPe5JWUWP9aDT/aZk4ybNIuNG9gMclRQykS3mnmLUcbw5wMRTZUvYOO8h8nGnwNj4Tr+FdoEqqNReF1pjaN+55GNLGRBwdQYxqrDxlJksm9oekJB9LPSEYjBhG5ot5ZQ+lTLHSXUdxZU38v1laicoLXAlvBur2Dve5+5z8JzzkTXKVI1sCgbR3J0tYGw9RzkvCKhV3pMbmmQVJ3ZGF1bx5g+IMoLwirSqZ6bZ0O6Gyuv3Tsw8DY+cZxjHZGp4hdv9NxsbHVb+TAj+ozmcnds9CGNKNITEYUfS3DABTZ153zXvp4MDMr+KFeiuACsFNRqiCkbaqV7zkHcDKCD94TUxtQ1MlZTYqShHMq/TrrlPrPOf4pe1GKRXvk9mpp63BBJzHwbMLHwAm2GTlIzzQUYnL8LZjWp5fezra33hf4WvO07UYxqVHuGzOwS43AIJNvHSZvYzhBv9IYdRTB9C/4gfGbnaPAGrQdVF2XvqOpXl8RcfGdd7ORo4HDYt1bMrENve+vx6z0Ph2J9pTR+bDXzGht8QZ5nTaei9mU/5ZP6j8M7RsVGiVEgOD0IViAeW4Hl0lzLFXwkun2Kq6Ofq8OrAnKA1+eYD1vM7E4eqilqgyre19xc7LcbXsZ3NLCsZV7S8Kz4OsoF2Ch163Q3/MzP44t6NPmlFbOMocbCEKaYsOYPzndfw+Q1Eq1zs75V+4gA/uLTgsLwpHppUzNawuumpttfcC89h7K4IUsLSXQXXN01c5vzmz8T41yZD835fovXZsU1tJwZEvgPiYp9TFRPIV6nSRqt44LJAJVE8rEAiGG8lRLQC7GKkUiSMYwQQm6HLJFbpIkUtoPWWkpgRMqNsDTzKVYAqdCpAII6EHQzkOK/w4w7MXw7Nhqh1snepX8aZ2H3SJ24jS8hpPs1To8Wx2LxGBq+xxC2NrqwuUddsyN8iNx6S9hu06NvPQu1vZ9Mbh2pNYOLtSY/VcDQ/dOxHQz54d2R2R1yujFHHMMpIYeomcouPRaSl2ep/wDGafURJ5p9K8fnEkcpFfHH9O6tC5j4WnVRxKTGUcfmBQDUAA9dvDlCjwyrlLe0YAHNa23xv47STh+FFnc2uzAfAAfrOywdAMgXKAOgFhpPPy3dI9DxuNNtHOpx2rRVVORs1rMxy2uL6jyvr4SnjXGIeoqvo4Uk8lqWGw5i4HxljjfCSzoh2ykA+CsR+Dj0hwzCBQCdCRqPtDfzHzHznPbO6oraNXhd0w3smFmBBvffKwNyetrzkuILT4hXZ6ikpRC007xGZgzF2Ntwe6PKa/aPifs6T2OuWxO177A9T4zG7P0ilBb7t3z/AFbfK07sGN1yf9Hn5sy5OK69mwlAAAAAAaADYAcgI/6PKrYq0YMW7aKCZs0zJSizle1XZ5KZ9ut8rOA6WFlLAksp5XI26mdjgsAqoqoO6qgL5AaecyO1WFf6I7udmQ+tRR+c6zglL/l6TczTQn4oINuhaKi8P6yzTwqrLzU41KdzKjByObJnjDT7IXOUXkuC4bnGd2bXMMoAtlIK63iFLtNMVwtlA2H4Ak/gZ0cVFa7OOOR5ZNy6XSKnDOzWFoqFWkGAvbPd99/e0HpNtUA2AHkLfCR0XvJLyJSb7Z1wSStC3iQjSYimPEALxBrJ0S0ASERLR0WMZoinoRjEUX0jSb6CW6SACDZMVbHU1tJAsaIFjJNVoc78hFp0+ZioltTHM8ChRPBv4vcLFHHGoostdBU/rXuP+CnzYz3ai1zflPNP45YQGhhqttVqsl/B0LW9aYifQ4vZ418YRLCEyNT1SLaKIoZV77myAgE9S17D5E+QM3ONqh+IfIrf0tb4AGdH2f4hnULY/K34zh+KcX1YLqDprzmnwGtVtewUD96AC087K6dnoeMnTTOv4wV7hIJIYnT+XKbn1yzlsTVIsvIWt102v47S7jcaQ13cWVdRuTewA03uTt4iY3abGezSi2QtVrqTSQC+ha6k9TlZNOp6Qwx5zutIvPLjCk9sw+Lua9VMOuoBzv5Dr+HmZ0FPBO3gJL2b4H7BC9WzVn7zn+UckB5268z8JvL4Tub/AA89L9MvD8HA1bXzmrh8Gq8oteslNC9RwqLqWY2AnE8U47XxjGjhldKZ0ZhcO9/H6inpufDURbY9Efbzja1B9HpuCoYNUYagZTcLfrmsbcrTtuDOTRQ5SoyKFB0OUAAEjloJl9neyVOgFd1DuNR/Kh+yOZ8fTx6NhNIQ9s5sufXGP/SNljwlh5yVKcRxc2m1nGo+2RpSJFx8Lx9DCub5woB3AJa46EkCw8AJdRQBaSLIcrOmEFERUtJBG3iFoja6FZoIt4iLeWUW0ASsES0fEjWaIvoGMYxijWJa7W6bxkNj6Kc5ZEaix8lmkVQokgFo0aSM1IjRIlZ5AzZjYRjvfQSxh6VoA3eiamthOK/i7Tvw5mI9ypSb1bJ/+p3IE57t1ghWwNWmeeQ/7ain8pMnphHtHzn7JDCdE3ZfoYTn+Rfp0cTrAswu2eKApNTU/wCm5RiP/kyo7/io/wC34mdXw7DEOHfZAz26lFLD5gTgaLB6+Jo1tVdw5sdQ9jZlPUA/u89Dx1ylX+zhzvjHl+VZQwXEAyjNvtOwocZt
+                    S9nRTPUNu6oN7dWPIeJ0nPYDsyiOTWfMl+4E7pa2+Y/VtzA87233sRikpplpqEXougPn1PibxL/znkdy0if8jGGob0V8UjNVSmXvWrulKyHu0kZgGy9Wt9bw06n0njOESyOEF0zIhtqqta4B5A5F9J5p2FpGvxBXOopK9T42Kr82nrfEEvTI6C/pDNCMGoR6ReKcppyk9s51ATKnFuM0sMoLnM59ymurt4/ZHiZl8X7R5W9lhgHqXylwMyIegA99vAafhF4P2Zs3tsSS7t3rMc2v2zz+6NB48sKLM6jgMRjmFbEnJRGqINv6AfeP2z8B07fhfC0pKAqBenh115nqecipnPVVBsvfbwVSNPibCbREuO9mGWTeiIrBUjiItpoc9DWNhG0Bc3nAfxD4tjqNUFGZKBCqjJlJZyCWDbtfQ2G1vGbXYvBY5M74yoSrAZUdg7hr3LEjRdNMoJ+EVlqHTOtEdGLCo9lJ6Ane3wiNESXgi3lI1352AIuoINwedyD3vlI+B1KiDJUcvctlqMuUnmVtc3HvWP2TFZUVumbaLaOjM8C8Rp0DNGE3jWeS0klGd2xdheJgluM3WR4x7CWsKmVAPXzifQ1/KiS0cDaEhdryTaKHO9/KRM+kR2hSp5j4QSFKXpEmEpE6maCiNRbCSCDY0qEmb2j/AOnqeQ/uE0hMntO9sO/iVH/kD+UVXoLo4CwhEhMvgiL5WP4f2ioNiUw6HOzZwSPc7qOxF/re7bTTx5Tk+O9jq6V3rYce1Rj7q/6icgCp94AWF1ueoE7Hs/2eo4ZgUW7nRnfvO1xY68h4CwmtXXedWJ1uPo5c0nF0+mebl6qqUrUaiE+7nRlsw2sSPh8YYbgOMxI7lIovN6l0X4XF2/pBnoaV3GzsPIkfKU+I9oxQ3YM5F1QWzP56aDxnTLzJ1SSIx+LBSsb2X4EnDkq1q9dSXVM7WyogUmyqTqxJboL2GkzsdxjE8Rc0MKrU6H13Pdd16u31EP8AKNT6iNwfBsTxBxWxTZKQN0pr7oHRFO5+2fh4d9gsIlJAlNQqjkOZ6k7k+JnHKTk7fZ3JJKkclwjg9PDjugF9i1reYUchH8U4itNCSeUm4piMjMOeYgAbnXSwkWB4OWPta/vboh1CdCerfhIpydIzlJRVsi7EtUdq9R0Kg5FTNoSBmJ06arOoYyhwLCmnRsxuzMzsetzZf/ELLhM1jHiqOdy5fYdEd4l5FWewJsT4AXJ8AOsZPZVZrutz9q3XLv8Al6y0la5252Hj1/L1mdh+H1izVGKh30ym7LTQHRBYi7c2PM6bATVo0AnO5ta+2nQDkINlRg09j80zsWa5dVphWVnUuWbKFp2IIUBTmN1vuPe9L7AyXC0tz1/Afu/xgUnsfTwYZrk7Cw02j/8Ah1rWfZsw06nUb9Cw/qlimLSXNJNlvbIUo+Ml9gv7McsdEx0QlFBFh4/v98pIRYRcut/3+95XxNSwisEirUfM6r/UfIf5Imom0xOFnM7v45R8NT8z8psk2EqRMNtsSo8jvEJjCb6SUi3KhVXMZo0adhIcNStLaiDYRXscI1jHRpECxROU/iDxNKNBMxtmfT+lGJ/ETrJ4x/HfFXqYWlf3UqVCPvMqr/Y0FtifRl1O1dK51hPPIS6IpH0RS94eYiYvaEIsPTObyu0UztPP+A9/Ekv3iatiW1uMx0N4sIvZ0Q6PXOG+5bkDYDoLnSWoQks2RzTf9bU8L28NOUv1ecIS8fRxZ+y0vujyH4RhhCUyV0NMdQ3hCJjx9k4jTCEDSQyrsZfpbCEIMmP8iYRYQiNx6xwhCSwEaZ2O2MIQG+ivwP3P6n/uM1WhCVLszxdETRcNvFhAp9mjTkghCSaiwhCABPBP42f+4L/9en/fUhCOPYmeeQhCaCP/2Q=="
+                        alt="" width="520px" height="520px">
+                </div>
+            </div>
+            <div class="up-down">
+                <div>
+                    <a class="scroll-down" href="#front-page"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                    <a class="scroll-down" href="#third-page"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark ">
+        <div class="container biography" id="third-page">
+            <h3>Biography</h3>
+            <p> A.P.J. Abdul Kalam, in full Avul Pakir Jainulabdeen Abdul Kalam,
+                was born on October 15, 1931, in Rameswaram, Tamil Nadu, India.APJ Abdul Kalam's journey, 
+                from a small town in India to becoming a world-renowned scientist and the President of 
+                the country, is a testament to the power of dreams, hard work, and perseverance. His 
+                dedication to science, education, and humanity serves as a guiding light for individuals 
+                worldwide. APJ Abdul Kalam will forever be remembered as a true visionary and a source of 
+                inspiration for generations to come.</p>
+
+                <div class="bio">
+                    <div>
+                        <h4>Introduction</h4>
+                        <p>APJ Abdul Kalam, also known as the Missile Man of India, was a visionary scientist,
+                           an exceptional leader, and the 11th President of India. His life and achievements 
+                           serve as a testament to the power of perseverance, intellect, and determination. 
+                           In this short auto, we will explore the remarkable journey of APJ Abdul Kalam, 
+                           highlighting his contributions and the impact he left on the world.</p>
+                    </div>
+                    <div>
+                        <h4>Early Life and Education</h4>
+                        <p>Born on October 15, 1931, in Rameswaram, Tamil Nadu, Abdul Kalam hailed from a humble
+                            background. Despite financial constraints, he pursued his education with unwavering 
+                            determination. Kalam graduated in physics from St. Joseph's College, Tiruchirappalli, 
+                            and later specialized in aerospace engineering from the Madras Institute of Technology.</p>
+                    </div>
+                    <div>
+                        <h4>Scientific Contributions</h4>
+                        <p>Kalam's expertise in aerospace engineering led him to play a crucial role in India's 
+                            space and defense programs. He spearheaded the development of India's first indigenous 
+                            satellite launch vehicle and the country's first nuclear-capable ballistic missile. 
+                            His scientific contributions earned him recognition and accolades both nationally and internationally.</p>
+                        <p>In the realm of technological marvels, few names shine as brightly as that of APJ Abdul Kalam. 
+                            Known as the "Missile Man of India," Kalam's contributions to science and innovation have left 
+                            an indelible mark on the world. From his humble beginnings to his awe-inspiring achievements, 
+                            let us embark on a journey to discover the remarkable inventions of this visionary scientist.</p>
+                    </div>
+                    <div>
+                        <h4>Role as President</h4>
+                        <p>In 2002, Kalam became the President of India, serving as a unifying figure and an 
+                            inspiration to millions. He utilized his position to promote education, particularly 
+                            in the fields of science and technology. Kalam was a strong advocate for youth empowerment 
+                            and emphasized the importance of harnessing India's intellectual potential to achieve progress 
+                            and development.</p>
+                    </div>
+                    <div>
+                        <h4>Legacy and Inspiration</h4>
+                        <p>Beyond his professional achievements, APJ Abdul Kalam left an indelible mark on society through 
+                            his humility, simplicity, and passion for improving the lives of others. He connected with people 
+                            from all walks of life and was widely regarded as the People's President. Kalam's speeches, books, 
+                            and interactions with students continue to inspire generations, encouraging them to dream big and 
+                            work towards a better future.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Death</h4>
+                        <p>APJ, commonly referring to Dr. A.P.J. Abdul Kalam, was a renowned scientist and the 11th President of 
+                            India. He passed away on July 27, 2015. Dr. Kalam collapsed while delivering a lecture at the Indian 
+                            Institute of Management Shillong in Meghalaya, India. He was immediately rushed to the hospital, where 
+                            efforts were made to revive him. Unfortunately, despite the medical team's best efforts, he was pronounced 
+                            dead due to a cardiac arrest. Dr. A.P.J. Abdul Kalam's sudden demise left the nation and the world in shock, 
+                            as he was highly regarded for his contributions to science, technology, and inspiring leadership.</p>
+                    </div>
+                </div>
+            <div class="up-down">
+                <div>
+                    <a class="scroll-down" href="#second-page"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                    <a class="scroll-down" href="#fourth-page"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="fourth-page">
+        <div>
+            <h3><span>Greatest</span> invention</h3>
+        </div>
+        <div class="invention">
+            <div>
+                <ul>
+                    <span class="line"></span>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                <div>
+                                    <span style="font-size: 0.75rem;"><span>1970</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <p class="inv-title">Hovercraft</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="description"> In 1970, APJ Abdul Kalam played a pivotal 
+                                            role in the development of India's first indigenous hovercraft. 
+                                            This innovative creation revolutionized transportation across water 
+                                            and land, showcasing Kalam's prowess as a visionary engineer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                <div>
+                                    <span style="font-size: 0.75rem;"><span>1980</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <p class="inv-title">Integrated Guided Missile Development Program (IGMDP)</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="description">Heading the IGMDP, Kalam led a team of scientists in
+                                             the successful development of an array of missiles, including Prithvi, 
+                                             Akash, Agni, and Trishul. This program not only bolstered India's defense 
+                                             capabilities but also propelled it to become a leading force in missile technology.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                <div>
+                                    <span style="font-size: 0.75rem;"><span>1998</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p class="inv-title">Pokhran-II Nuclear Tests</p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="description">As the chief architect of the Pokhran-II nuclear tests, 
+                                            conducted in 1998, Kalam played a crucial role in India's nuclear development.
+                                             These tests showcased India's nuclear capabilities and solidified its position 
+                                             as a nuclear power on the global stage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                <div>
+                                    <span style="font-size: 0.75rem;"><span>2002</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p class="inv-title">Cardioverter Defibrillator (Kalam-Raju Stent)</p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="description">Collaborating with cardiologist Dr. Soma Raju, 
+                                            APJ Abdul Kalam developed a low-cost, portable defibrillator for 
+                                            patients with cardiac ailments. Known as the Kalam-Raju Stent, this 
+                                            device revolutionized emergency cardiac care in remote and underserved areas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                <div>
+                                    <span style="font-size: 0.75rem;"><span>2003</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p class="inv-title">KalamSat</p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="description">In 2003, KalamSat, the world's smallest satellite weighing 
+                                            just 64 grams, was developed under the guidance of APJ Abdul Kalam. It served 
+                                            as a testament to India's capabilities in the field of miniaturized satellite 
+                                            technology, inspiring young minds to explore the vast realm of space.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="up-down">
+            <div>
+                <a class="scroll-down" href="#third-page"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+            <div>
+                <a class="scroll-down" href="#fifth-page"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <section class="container" id="fifth-page">
+        <div>
+            <h3><span>Famous</span> Quotes of Abdul Kalam</h3>
+        </div>
+        <div class="invention">
+            <div>
+                <ul>
+                    <span class="line"></span>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                    <div>
+                                        <p class="description"> Dream, dream, dream. Dreams transform into thoughts, 
+                                            and thoughts result in action.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                    <div>
+                                        <p class="description"> You have to dream before your dreams can come true.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                    <div>
+                                        <p class="description"> Don't take rest after your first victory because if you 
+                                            fail in the second, more lips are waiting to say that your first victory was just luck.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                    <div>
+                                        <p class="description"> If you want to shine like a sun, first burn like a sun.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                    <div>
+                                        <p class="description">We should not give up and we should not allow the problem to defeat us.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                    <div>
+                                        <p class="description">Let us sacrifice our today so that our children 
+                                            can have a better tomorrow.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                    <div>
+                                        <p class="description">Failure will never overtake me if my determination 
+                                            to succeed is strong enough.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kartra_timeline__item">
+                        <span class="circle"></span>
+                        <div>
+                            <div data-component="text">
+                                    <div>
+                                        <p class="description">Man needs difficulties in life because they are necessary 
+                                            to enjoy the success.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="up-down">
+            <div>
+                <a class="scroll-down" href="#fourth-page"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+            <div>
+                <a class="scroll-down" href="#front-page">TOP</a>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-dark">
+        <p class="pQuote"><i> Don't read success stories, you will only get message. Read failure stories, 
+            you will get some ideas to get success.</i><br>
+            <span>Abdul Kalam</span></p>
+
+    </section>
+    <script src="script/scrtip.js"></script>
+</body>
+
+</html>
